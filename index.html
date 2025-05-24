@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultural Cities of Afghanistan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Noto+Serif&display=swap" rel="stylesheet">
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #F5F5DC;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Noto Serif', serif;
+    }
+
+    header {
+      text-align: center;
+      background-color: #8B4513;
+      color: white;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    header h2 {
+      animation: fadeIn 3s ease-in-out;
+      margin-top: 0.5rem;
+      font-weight: normal;
+      color: #DAA520;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    nav {
+      background-color: #DAA520;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #8B4513;
+    }
+
+    section {
+      padding: 2rem 1rem;
+    }
+
+    .intro {
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+    }
+
+  
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .city-card {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .city-card:hover {
+      transform: scale(1.05);
+      background-color: #f0e4c3;
+    }
+
+    /* === Gallery === */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery-card {
+      background: #fff;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s ease;
+    }
+
+    .gallery-card:hover {
+      background-color: #FAF0E6;
+    }
+
+    .gallery-card .city-name {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .gallery-card .fact {
+      font-style: italic;
+    }
+
+    .city-of-day {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #8B4513;
+      color: white;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .city-of-day .image {
+      flex: 1 1 300px;
+      min-height: 250px;
+      background: #DAA520;
+    }
+
+    .city-of-day .info {
+      flex: 2 1 300px;
+      padding: 1.5rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .city-of-day:hover .info {
+      background-color: #A0522D;
+    }
+
+    .submit-form {
+      max-width: 600px;
+      margin: auto;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .submit-form input, .submit-form textarea, .submit-form button {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border 0.3s ease;
+    }
+
+    .submit-form input:focus, .submit-form textarea:focus {
+      border-color: #DAA520;
+      outline: none;
+    }
+
+    .submit-form button {
+      background-color: #DAA520;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .submit-form button:hover {
+      background-color: #8B4513;
+    }
+
+    @media (max-width: 768px) {
+      .city-of-day {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Cultural Cities of Afghanistan</h1>
+    <h2>Explore the richness of Afghan heritage</h2>
+  </header>
+
+  <nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#city">City of the Day</a>
+    <a href="#submit">Submit</a>
+    <a href="#herat">Herat</a>
+    <a href="#mazar">Mazar-i-Sharif</a>
+    <a href="#kabul">Kabul</a>
+    <a href="#kandahar">Kandahar</a>
+    <a href="#jalalabad">Jalalabad</a>
+  
+  </nav>
+
+  <section class="intro">
+    <p>Afghanistan is a land of diverse cultures, with each city offering unique traditions, food, clothing, and celebrations. This site celebrates the beauty of Afghan cities—one at a time.</p>
+    <div class="featured-grid">
+      <div class="city-card">
+        <h3>Kabul</h3>
+        <p>Known for its rich history and bustling bazaars.</p>
+      </div>
+      <div class="city-card">
+        <h3>Mazar-i-Sharif</h3>
+        <p>Famous for the Blue Mosque and Nawroz festivities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>City Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-card">
+        <div class="city-name">Herat</div>
+        <div class="fact">Known for poetry and art.</div>
+      </div>
+      <div class="gallery-card">
+        <div class="city-name">Bamiyan</div>
+        <div class="fact">Home of the ancient Buddha statues.</div>
+      </div>
+      <div class="gallery-card">
+        <div class="city-name">Kandahar</div>
+        <div class="fact">Cradle of traditional Pashtun culture.</div>
+      </div>
+      <div class="gallery-card">
+        <div class="city-name">Jalalabad</div>
+        <div class="fact">Famous for oranges and springtime festivals.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="city">
+    <h2>City of the Day</h2>
+    <div class="city-of-day">
+      <div class="image"></div>
+      <div class="info">
+        <h3>Herat</h3>
+        <ul>
+          <li>Traditional silk weaving</li>
+          <li>Famous for minarets and Islamic art</li>
+          <li>Hosts cultural festivals year-round</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+
+</body>
+</html>
+
+  <section id="herat">
+  <h2>Herat</h2>
+  <img src="../Afghanistan/herat 3.jpg" alt="Herat Citadel" class="city-image">
+  <p>Herat ist eine historische Stadt im Westen Afghanistans, bekannt für ihre bedeutende Kunst- und Literaturtradition. Sie war ein Zentrum der persisch-muslimischen Kulturwelt und beherbergt die beeindruckende Herat-Zitadelle, die bis ins Jahr 330 v. Chr. zurückreicht.</p>
+  <ul>
+    <li>Berühmte Sehenswürdigkeiten: Herat-Zitadelle, Musalla-Komplex</li>
+    <li>Traditionen: Teppichweberei, Miniaturmalerei</li>
+    <li>Bekannte Persönlichkeiten: Der Dichter Dschāmi und der Maler Kamal-ud-Din Behzad</li>
+  </ul>
+</section>
+
+<section id="mazar">
+  <h2>Mazar-i-Sharif</h2>
+  <img src="../Afghanistan/herat 3.jpg" alt="Mazar-i-Sharif" class="city-image">
+  <p>Mazar-i-Sharif ist eine bedeutende Stadt im Norden Afghanistans, bekannt für die Blaue Moschee und das jährliche Nowruz-Fest. Die Stadt ist ein Zentrum der religiösen und kulturellen Aktivitäten in der Region.</p>
+  <ul>
+    <li>Berühmte Sehenswürdigkeiten: Blaue Moschee, Mausoleum von Ali</li>
+    <li>Traditionen: Nowruz (persisches Neujahrsfest), Guli Surkh Festival</li>
+    <li>Sport: Buzkashi, ein traditionelles Reiterspiel</li>
+  </ul>
+</section>
+
+<section id="kabul">
+  <h2>Kabul</h2>
+  <img src="../Afghanistan/kabul 1.jpg" alt="Kabul" class="city-image">
+  <p>Kabul ist die Hauptstadt Afghanistans und das politische sowie kulturelle Zentrum des Landes. Die Stadt vereint historische Stätten mit modernen Entwicklungen und ist ein Schmelztiegel verschiedener Kulturen.</p>
+  <ul>
+    <li>Berühmte Sehenswürdigkeiten: Kabul-Zoo, Nationalmuseum von Afghanistan</li>
+    <li>Traditionen: Traditionelle afghanische Küche, Musik und Tanz</li>
+    <li>Bildung: Heimat vieler Universitäten und Bildungseinrichtungen</li>
+  </ul>
+</section>
+
+<section id="kandahar">
+  <h2>Kandahar</h2>
+  <img src="../Afghanistan/kabul 2.jpg" alt="Kandahar" class="city-image">
+  <p>Kandahar ist eine der ältesten Städte Afghanistans und gilt als Wiege der Paschtunen. Sie spielte eine zentrale Rolle in der afghanischen Geschichte und ist bekannt für ihre historischen Stätten und kulturellen Traditionen.</p>
+  <ul>
+    <li>Berühmte Sehenswürdigkeiten: Mausoleum von Ahmad Schah Durrani, Zahir Shah Mausoleum</li>
+    <li>Traditionen: Paschtunwali (traditionelles Ehrenkodex), Teppichweberei</li>
+    <li>Wirtschaft: Landwirtschaft, insbesondere Obst- und Gemüseanbau</li>
+  </ul>
+</section>
+
+<section id="jalalabad">
+  <h2>Jalalabad</h2>
+  <img src="../Afghanistan/kabul 4.jpg" alt="Jalalabad" class="city-image">
+  <p>Jalalabad ist die Hauptstadt der Provinz Nangarhar im Osten Afghanistans. Die Stadt ist bekannt für ihre landwirtschaftliche Produktion, insbesondere Orangen, und ihre Nähe zum Khyber-Pass, einem wichtigen Handelsweg.</p>
+  <ul>
+    <li>Berühmte Sehenswürdigkeiten: Nangarhar Universität, historische Moscheen</li>
+    <li>Traditionen: Landwirtschaftliche Feste, lokale Märkte</li>
+    <li>Wirtschaft: Landwirtschaft, insbesondere Zitrusfrüchte und Reis</li>
+  </ul>
+  <section id="submit">
+    <h2>Submit a City</h2>
+    <form class="submit-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="city" placeholder="City Name" required>
+      <textarea name="detail" placeholder="Share a cultural detail..." rows="4" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</section>
+<div id="loader">
+    <div class="spinner"></div>
+  </div>
+  <div class="gallery-card">
+    <div class="city-name">Herat</div>
+    <div class="fact">Known for poetry and art.</div>
+    <div class="footer-quote"> Herat is the land of art. Zahra Karimi</div>
+  </div>
+
+
+---
+
